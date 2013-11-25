@@ -9,6 +9,13 @@
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 
+function fortuneTeller(numberOfChildren, partnersName, GeographicLocation, profession){
+	 document.write("You will be a " + profession + " in " + GeographicLocation + " and married to " + partnersName + " with " + numberOfChildren + " kids.");
+};
+
+fortuneTeller(10, "Shrek", "Canada", "Professional Weaver");
+fortuneTeller(20, "Captain Jack", "Britain", "Professional Box Cuuter")
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old you are? Calculate it!
@@ -19,7 +26,13 @@
 // outputs the result to the screen like so: "You are either NN or NN"
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
+function calculateAge(Birth, Current) {
+	var Difference = Current - Birth;
+	var Difference1 = Current - Birth + 1;
+	console.log("You are either " + Difference + " or " + Difference1);
+}
 
+calculateAge(1989, (new Date().getFullYear()))
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -36,13 +49,19 @@
 // Create 2 functions that calculate properties of a circle, using the definitions here.
 
 // Create a function called calcCircumfrence:
-
 // Pass the radius to the function.
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 // Create a function called calcArea:
-
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
+
+function calc(radius) {
+	var Circumference = 2*3.14*radius;
+	var AREA = 3.14*(radius*radius);
+	console.log("The area is " + AREA + ". The circumference is " + Circumference);
+}
+
+calc(10);
 
 // EXERCISE: The Temperature Converter
 
